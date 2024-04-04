@@ -1851,7 +1851,7 @@ do
         });
 
         local Scrolling = Library:Create('ScrollingFrame', {
-            BackgroundTransparency = 1;
+            BackgroundTransparency = 0;
             CanvasSize = UDim2.new(0, 0, 0, 0);
             Size = UDim2.new(1, 0, 1, 0);
             ZIndex = 21;
@@ -1977,7 +1977,7 @@ do
                 end;
 
                 ButtonLabel.InputBegan:Connect(function(Input)
-                    if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
+                    if Input.UserInputType == Enum.UserInputType.MouseButton1  then
                         local Try = not Selected;
 
                         if Dropdown:GetActiveValues() == 1 and (not Try) and (not Info.AllowNull) then
@@ -2024,6 +2024,7 @@ do
 
             local Y = math.clamp(Count * 20, 0, MAX_DROPDOWN_ITEMS * 20) + 1;
             ListOuter.Size = UDim2.new(1, -8, 0, Y);
+            print(Layout.AbsoluteContentSize.Y)
             Scrolling.CanvasSize = UDim2.new(0, 0, 0, Layout.AbsoluteContentSize.Y);
 
             -- ListOuter.Size = UDim2.new(1, -8, 0, (#Values * 20) + 2);
