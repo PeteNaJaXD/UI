@@ -1868,7 +1868,7 @@ do
             ScrollBarImageColor3 = 'AccentColor'
         })
 
-        Library:Create('UIListLayout', {
+        local Layout = Library:Create('UIListLayout', {
             Padding = UDim.new(0, 0);
             FillDirection = Enum.FillDirection.Vertical;
             SortOrder = Enum.SortOrder.LayoutOrder;
@@ -2024,7 +2024,7 @@ do
 
             local Y = math.clamp(Count * 20, 0, MAX_DROPDOWN_ITEMS * 20) + 1;
             ListOuter.Size = UDim2.new(1, -8, 0, Y);
-            Scrolling.CanvasSize = UDim2.new(0, 0, 0, (Count * 20) + 1);
+            Scrolling.CanvasSize = UDim2.new(0, 0, 0, Layout.AbsoluteContentSize.Y);
 
             -- ListOuter.Size = UDim2.new(1, -8, 0, (#Values * 20) + 2);
         end;
