@@ -2025,6 +2025,7 @@ do
             local Y = math.clamp(Count * 20, 0, MAX_DROPDOWN_ITEMS * 20) + 1;
             ListOuter.Size = UDim2.new(1, -8, 0, Y);
             print(Layout.AbsoluteContentSize.Y)
+            
             Scrolling.CanvasSize = UDim2.new(0, 0, 0, Layout.AbsoluteContentSize.Y);
 
             -- ListOuter.Size = UDim2.new(1, -8, 0, (#Values * 20) + 2);
